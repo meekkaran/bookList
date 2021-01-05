@@ -8,7 +8,7 @@ class Book{
 
 class UI{
     addBookTolist(book){
-        const list = document.getElementById(book-id);
+        const list = document.getElementById('book-list');
         const row = document.createElement('tr');
         row.innerHTML = `
         <td>${book.title}</td>
@@ -74,7 +74,7 @@ document.getElementById('book-form').addEventListener('submit',function(e)
         }
         e.preventDefault();
     })
-    
+
 //event listening for delete
 document.getElementById('book-list').addEventListener('click',function(e){
     //instantiate UL
